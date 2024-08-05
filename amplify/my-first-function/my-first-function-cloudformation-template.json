@@ -1,0 +1,12 @@
+ "Resources": {
+  "LambdaFunction": {
+      "Properties": {
+        "Runtime": "nodejs16.x",
+        "Layers": [],
+        "EphemeralStorage":{
+          "SizeInMB": 1024
+        }
+      }
+    }
+  },
+}
