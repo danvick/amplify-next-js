@@ -14,13 +14,7 @@ Amplify.configure(outputs);
 const client = generateClient<Schema>();
 
 export default function App() {
-  const { takePicture } = camera();
-  async function handleTakePicture() {
-    const resp = await takePicture({
-      element: document.querySelector("#elementId"),
-    })
-  }
-  handleTakePicture();
+
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
 
   function listTodos() {
@@ -30,6 +24,13 @@ export default function App() {
   }
 
   useEffect(() => {
+    const { takePicture } = camera();
+    async function handleTakePicture() {
+      const resp = await takePicture({
+        element: document.querySelector("#elementId") as HTMLElement,
+      })
+    }
+    handleTakePicture();
     listTodos();
   }, []);
 
