@@ -29,7 +29,7 @@ userPool.addClient('my-app-client', {
 // const backendName = backend.auth.resources.userPool.node.tryGetContext("amplify-backend-name")
 
 const branchName = process.env.BranchName
-const domainPrefix = `danvickm-app-domain-212121`
+const domainPrefix = `danvickm-app-domain-21212167`
 const domain = userPool.addDomain("myAppDomain", {
   cognitoDomain: {
     domainPrefix: domainPrefix
