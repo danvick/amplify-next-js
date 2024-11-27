@@ -35,6 +35,6 @@ const domain = userPool.addDomain("myAppDomain", {
   cognitoDomain: {
     domainPrefix: domainPrefix
   }
-})
+});
 
 console.log("domain name = ", domain)
