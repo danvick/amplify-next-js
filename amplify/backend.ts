@@ -3,14 +3,14 @@ import { auth } from './auth/resource.js';
 import { data } from './data/resource.js';
 import { myFirstFunction } from './my-first-function/resource';
 
-// const backend = 
+const backend = 
 defineBackend({
   auth,
   data,
   myFirstFunction,
 });
 
-/* // create a domain
+// create a domain
 const userPool = backend.auth.resources.userPool
 
 
@@ -30,11 +30,11 @@ userPool.addClient('my-app-client', {
 // const backendName = backend.auth.resources.userPool.node.tryGetContext("amplify-backend-name")
 
 const branchName = process.env.BranchName
-const domainPrefix = `danvickm-app-domain-21212167`
+const domainPrefix = `danvickm-app-domain-212121`
 const domain = userPool.addDomain("myAppDomain", {
   cognitoDomain: {
     domainPrefix: domainPrefix
   }
 })
 
-console.log("domain name = ", domain) */
+console.log("domain name = ", domain)
